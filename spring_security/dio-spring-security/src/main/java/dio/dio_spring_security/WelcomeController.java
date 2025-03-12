@@ -8,20 +8,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController {
     @GetMapping
     public String welcome() {
-        return "Welcome to y Spring Boot WEB API";
+        return "Welcome to My Spring Boot Web API";
     }
 
     @GetMapping("/users")
-    @PreAuthorize("hasAnyRole('MANAGERS', 'users')")
     public String users() {
-
-        return "Autorized user";
+        return "Authorized user";
     }
 
     @GetMapping("/managers")
-    @PreAuthorize("hasRole('MANAGERS')")
     public String managers() {
-        return "Autorized manager";
+        return "Authorized manager";
     }
-
 }
