@@ -70,4 +70,10 @@ public class Board {
         return !hasError() && getStatus().equals(COMPLETE);
     }
 
+    // ver essa classe depois
+    public boolean hasErrors() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'hasErrors'");
+    }
+
 }

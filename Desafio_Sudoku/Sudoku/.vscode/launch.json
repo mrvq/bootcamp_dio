@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "UIMain",
+      "request": "launch",
+      "mainClass": "br.com.dio.UIMain",
+      "projectName": "Sudoku_ce2a6b37"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"
