@@ -1,12 +1,12 @@
 package br.com.dio.service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import br.com.dio.model.Board;
 import br.com.dio.model.GameStatusEnum;
 import br.com.dio.model.Space;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class BoardService {
 
@@ -16,7 +16,6 @@ public class BoardService {
 
     public BoardService(final Map<String, String> gameConfig) {
         this.board = new Board(initBoard(gameConfig));
-
     }
 
     public List<List<Space>> getSpaces() {
@@ -51,7 +50,7 @@ public class BoardService {
                 spaces.get(i).add(currentSpace);
             }
         }
+
         return spaces;
     }
-
 }
