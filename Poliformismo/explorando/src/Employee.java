@@ -1,4 +1,4 @@
-public sealed abstract class Employee permits Manager, Salesman {
+public class Employee {
 
     protected double salary;
     protected String code;
@@ -61,7 +61,5 @@ public sealed abstract class Employee permits Manager, Salesman {
         this.address = null;
         this.age = null;
     }
-
-    public abstract double getFullSalary();
 
 }

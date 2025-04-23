@@ -1,4 +1,4 @@
-public non-sealed class Salesman extends Employee {
+public class Salesman extends Employee {
 
     private double percentPerSold;
     private double soldAmount;
@@ -15,7 +15,6 @@ public non-sealed class Salesman extends Employee {
         this.soldAmount = soldAmount;
     }
 
-    @Override
     public String getCode() {
 
         return "SL" + super.getCode();
@@ -41,7 +40,6 @@ public non-sealed class Salesman extends Employee {
         this.soldAmount = soldAmount;
     }
 
-    @Override
     public double getFullSalary() {
         return this.getSalary() + (this.getSoldAmount() * this.getPercentPerSold() / 100);
     }
