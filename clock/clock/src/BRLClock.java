@@ -8,7 +8,7 @@ public non-sealed class BRLClock extends Clock {
             case USClock usClock ->
                 this.hour = (usClock.getPeriodIndicator().equals("PM")) ? usClock.getHour() + 12 : usClock.getHour();
 
-            case BRLClock brlClock ->  super.convert(clock);
+            case BRLClock brlClock -> brlClock.convert(clock);
 
         }
 
