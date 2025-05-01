@@ -1,3 +1,5 @@
+package singleton;
+
 /**
  * Sigleton "Lazy" - Singleton "Preguiçoso"
  * 
